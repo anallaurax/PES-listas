@@ -9,10 +9,10 @@ compostos para validar o cálculo do seu algoritmo, por exemplo o site: '''
 valor = float(input("Digite o valor que será guardado:"))
 qnt_meses = int(input("Informe a quantidade de meses que voce irá guardar o dinheiro:"))
 juros = 0.005
-
+m = 1 
 valor_acumulado = 0
 
-for mes in range(1, qnt_meses + 1):
-    # Cada mês depositamos o valor e aplicamos os juros sobre o total acumulado
-    valor_acumulado = (valor_acumulado + valor) * (1 + juros)
-    print(f"Mês {mes}: R$ {valor_acumulado:.2f}")
+while m <= qnt_meses:
+    valor_acumulado = valor_acumulado + (valor_acumulado*juros) + valor
+    print(f"Mês", m, ": R$", round(valor_acumulado, 2) )
+    m = m + 1 
