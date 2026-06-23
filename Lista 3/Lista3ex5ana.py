@@ -46,7 +46,7 @@ while True:
             peso = float(input("Digite o peso (kg): "))
 
             nomes.append(nome)
-            idades.append(idade)    # Serve para adicionar um elemento no final da lista.
+            idades.append(idade)    # Serve para adicionar um elemento no final da lista/espaço livre na lista
             alts.append(altura)
             pesos.append(peso)
 
