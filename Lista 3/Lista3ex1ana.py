@@ -12,5 +12,5 @@ idades[4] = int(input("Digite a idade do aluno 5:"))
 idades[5] = int(input("Digite a idade do aluno 6:"))
 
 for elemento in idades:
-    if elemento >= 16:
+    if elemento >= 16: 
      print("Idade:", elemento)
