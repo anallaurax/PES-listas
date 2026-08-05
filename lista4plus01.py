@@ -87,20 +87,38 @@ while True:
     elif opcao == 3:
        codexcluir = input('Digite o codigo que deseja excluir:')
        if codexcluir in profs:
+        associado = False
+
+        if codexcluir in lab102:
+            associado = True
+        elif codexcluir in lab103:
+            associado = True
+        elif codexcluir in lab104:
+            associado = True
+        elif codexcluir in lab105:
+            associado = True
+        elif codexcluir in lab106:
+            associado = True
+
+        elif codexcluir in lab107:
+            associado = True
+        
+        if associado:
+            print(' Erro!: Não é possovel excluir o professor pois ele está associado a um laboratório')
+        else:
           del profs[codexcluir]
           print(' Codigo excluido com sucesso:')
        else:
-          print(f' Erro, o {codexcluir} não existe:')
+        print(f' Erro, o {codexcluir} não existe:')
 
     elif opcao == 4:
-       codalterar = input('Digite o codigo que deseja alterar')
-
-       if codalterar in profs:
-        nomealterar = input('Digite o nome alterado:')
-        profs[codalterar] = nomealterar
-        print('Professor alterado com sucesso:')
-       else:
-          print('Professor não encontrado:')
+        codalterar = input('Digite o codigo que deseja alterar')
+        if codalterar in profs:
+         nomealterar = input('Digite o nome alterado:')
+         profs[codalterar] = nomealterar
+         print('Professor alterado com sucesso:')
+        else:
+           print('Professor não encontrado:')
 
     elif opcao == 5:
        lab102 = ['001', '003', '004', '005', '006']
@@ -192,25 +210,51 @@ while True:
         acessoalt = input('Digite o codigo que deseja alterar')
 
         if acessoalt in lab102:
-         nacessoalt = input('Digite o nome alterado:')
-         lab102[acessoalt] = nacessoalt
-         print('Acesso alterado com sucesso:')
+            nacessoalt = input('Digite o nome alterado:')
+            lab102[acessoalt] = nacessoalt
+            print('Acesso alterado com sucesso:')
         else:
-         print('Professor não encontrado:')
+             print('Professor não encontrado:')
 
         if acessoalt in lab103:
-         nacessoalt = input('Digite o nome alterado:')
-         lab103[acessoalt] = nacessoalt
-         print('Acesso alterado com sucesso:')
+            nacessoalt = input('Digite o nome alterado:')
+            lab103[acessoalt] = nacessoalt
+            print('Acesso alterado com sucesso:')
         else:
-         print('Professor não encontrado:')
+            print('Professor não encontrado:')
 
-        if acessoalt in lab102:
-                 nacessoalt = input('Digite o nome alterado:')
-                 lab102[acessoalt] = nacessoalt
-                 print('Acesso alterado com sucesso:')
-                else:
-                 print('Professor não encontrado:')
+        if acessoalt in lab104:
+            nacessoalt = input('Digite o nome alterado:')
+            lab104[acessoalt] = nacessoalt
+            print('Acesso alterado com sucesso:')
+        else:
+            print('Professor não encontrado:')
+
+        if acessoalt in lab105:
+            nacessoalt = input('Digite o nome alterado:')
+            lab105[acessoalt] = nacessoalt
+            print('Acesso alterado com sucesso:')
+        else:
+            print('Professor não encontrado:')
+
+        if acessoalt in lab106:
+            nacessoalt = input('Digite o nome alterado:')
+            lab106[acessoalt] = nacessoalt
+            print('Acesso alterado com sucesso:')
+        else:
+            print('Professor não encontrado:')
+            
+        if acessoalt in lab107:
+            nacessoalt = input('Digite o nome alterado:')
+            lab107[acessoalt] = nacessoalt
+            print('Acesso alterado com sucesso:')
+        else:
+            print('Professor não encontrado:')
+                
+                
+                
+                
+                
         
         
 
