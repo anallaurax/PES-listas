@@ -20,9 +20,6 @@ class Produto:
     def vender(self):
         if self.quantidade > 0:
             self.quantidade -= 1
-            print("Produto vendido!")
-        else:
-            print("Produto esgotado!")
 
 
 # teste
@@ -31,9 +28,12 @@ nome = input("Digite o nome do produto: ")
 quantidade = int(input("Digite a quantidade do produto: "))
 
 produto = Produto(nome, quantidade)
+produto2 = Produto("Caneta", 0)
 
-print("\nProduto:", produto.nome)
-print("Quantidade:", produto.quantidade)
+
+
+print("\nProduto:", produto.nome   )
+print("Quantidade:", produto.quantidade   )
 
 if produto.esta_disponivel():
     print("Produto disponível!")

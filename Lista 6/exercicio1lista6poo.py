@@ -7,11 +7,14 @@ class Livro:
     def __init__(self, titulo, autor):
         self.titulo = titulo
         self.autor = autor
-
     
     def descrição(self):
         return f'O livro {self.titulo} foi escrito por {self.autor}'
     
+
+
+
+
 
 t = input('Digite o nome do titulo do livro:')
 a = input('Digite o nome do autor do livro:')
