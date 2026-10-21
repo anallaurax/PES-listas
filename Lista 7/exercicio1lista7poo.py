@@ -16,6 +16,9 @@ class MarcadorDePagina:
         self.pagina_atual = pagina_atual
         self.livro = livro
 
+    def __repr__(self):
+        return f"MarcadorDePagina(pagina_atual={self.pagina_atual}, livro={self.livro.titulo})"
+
 class Livro:
     def __init__(self, titulo, total_paginas):
         self.titulo = titulo
@@ -27,7 +30,7 @@ class Livro:
             print(f"Página inválida. O livro '{self.titulo}' tem {self.total_paginas} páginas.")
             return False
         if self.marcador is None:
-            self.marcador = MarcadorDePagina(pagina, self)
+            self.marcador = MarcadorDePagina(pagina)
             return True
         else:
             self.marcador.pagina_atual = pagina
