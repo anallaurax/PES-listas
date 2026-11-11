@@ -20,3 +20,16 @@ class Computador:
     def __init__(self, tipo, fabricante_cpu, modelo_cpu):
         self.tipo = tipo
         self.cpu = CPU(fabricante_cpu, modelo_cpu)
+
+
+t= input("Digite o tipo do computador (Desktop/Notebook): ")
+f = input("Digite o fabricante da CPU: ")
+m = input("Digite o modelo da CPU: ")
+
+
+computador = Computador(t, f, m)
+
+print("\n--- Computador cadastrado ---")
+print("Tipo:", computador.tipo)
+print("Fabricante da CPU:", computador.cpu.fabricante)
+print("Modelo da CPU:", computador.cpu.modelo)
